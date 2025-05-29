@@ -1,11 +1,12 @@
 {
-  "headers": [
+  "routes": [
     {
-      "source": "/api/(.*)",
-      "headers": [
-        { "key": "Access-Control-Allow-Origin", "value": "*" },
-        { "key": "Access-Control-Allow-Methods", "value": "GET" }
-      ]
+      "src": "/api/scroll",
+      "headers": {
+        "Access-Control-Allow-Origin": "https://sites.google.com",
+        "Access-Control-Allow-Methods": "GET",
+        "Content-Security-Policy": "default-src 'self' https://sites.google.com"
+      }
     }
   ]
 }
